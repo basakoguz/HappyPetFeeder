@@ -1,0 +1,109 @@
+[Sat Apr 29 13:51:25.532042 2017] [wsgi:warn] [pid 2041:tid 1995468800] mod_wsgi: Compiled for Python/2.7.8.
+[Sat Apr 29 13:51:25.532212 2017] [wsgi:warn] [pid 2041:tid 1995468800] mod_wsgi: Runtime using Python/2.7.9.
+[Sat Apr 29 13:51:25.533735 2017] [mpm_event:notice] [pid 2041:tid 1995468800] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Sat Apr 29 13:51:25.533834 2017] [core:notice] [pid 2041:tid 1995468800] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Apr 29 15:17:04.776495 2017] [wsgi:warn] [pid 686:tid 1996410880] mod_wsgi: Compiled for Python/2.7.8.
+[Sat Apr 29 15:17:04.780207 2017] [wsgi:warn] [pid 686:tid 1996410880] mod_wsgi: Runtime using Python/2.7.9.
+[Sat Apr 29 15:17:04.783693 2017] [mpm_event:notice] [pid 686:tid 1996410880] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Sat Apr 29 15:17:04.783816 2017] [core:notice] [pid 686:tid 1996410880] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Apr 29 17:26:07.654055 2017] [mpm_event:notice] [pid 686:tid 1996410880] AH00493: SIGUSR1 received.  Doing graceful restart
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 29 17:26:07.722305 2017] [wsgi:warn] [pid 686:tid 1996410880] mod_wsgi: Compiled for Python/2.7.8.
+[Sat Apr 29 17:26:07.722341 2017] [wsgi:warn] [pid 686:tid 1996410880] mod_wsgi: Runtime using Python/2.7.9.
+[Sat Apr 29 17:26:07.723409 2017] [mpm_event:notice] [pid 686:tid 1996410880] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Sat Apr 29 17:26:07.723486 2017] [core:notice] [pid 686:tid 1996410880] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Apr 29 17:27:18.469381 2017] [mpm_event:notice] [pid 686:tid 1996410880] AH00493: SIGUSR1 received.  Doing graceful restart
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 29 17:27:18.538307 2017] [wsgi:warn] [pid 686:tid 1996410880] mod_wsgi: Compiled for Python/2.7.8.
+[Sat Apr 29 17:27:18.538341 2017] [wsgi:warn] [pid 686:tid 1996410880] mod_wsgi: Runtime using Python/2.7.9.
+[Sat Apr 29 17:27:18.539521 2017] [mpm_event:notice] [pid 686:tid 1996410880] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Sat Apr 29 17:27:18.539614 2017] [core:notice] [pid 686:tid 1996410880] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Apr 29 17:27:50.723869 2017] [mpm_event:notice] [pid 686:tid 1996410880] AH00493: SIGUSR1 received.  Doing graceful restart
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 29 17:27:50.793570 2017] [wsgi:warn] [pid 686:tid 1996410880] mod_wsgi: Compiled for Python/2.7.8.
+[Sat Apr 29 17:27:50.793644 2017] [wsgi:warn] [pid 686:tid 1996410880] mod_wsgi: Runtime using Python/2.7.9.
+[Sat Apr 29 17:27:50.794871 2017] [mpm_event:notice] [pid 686:tid 1996410880] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Sat Apr 29 17:27:50.794960 2017] [core:notice] [pid 686:tid 1996410880] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Apr 29 17:37:12.618105 2017] [mpm_event:notice] [pid 686:tid 1996410880] AH00493: SIGUSR1 received.  Doing graceful restart
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 29 17:37:12.686429 2017] [wsgi:warn] [pid 686:tid 1996410880] mod_wsgi: Compiled for Python/2.7.8.
+[Sat Apr 29 17:37:12.686497 2017] [wsgi:warn] [pid 686:tid 1996410880] mod_wsgi: Runtime using Python/2.7.9.
+[Sat Apr 29 17:37:12.687857 2017] [mpm_event:notice] [pid 686:tid 1996410880] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Sat Apr 29 17:37:12.687993 2017] [core:notice] [pid 686:tid 1996410880] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Apr 29 17:43:39.816360 2017] [mpm_event:notice] [pid 686:tid 1996410880] AH00491: caught SIGTERM, shutting down
+[Sat Apr 29 17:43:44.860417 2017] [wsgi:warn] [pid 692:tid 1995681792] mod_wsgi: Compiled for Python/2.7.8.
+[Sat Apr 29 17:43:44.861514 2017] [wsgi:warn] [pid 692:tid 1995681792] mod_wsgi: Runtime using Python/2.7.9.
+[Sat Apr 29 17:43:44.865024 2017] [mpm_event:notice] [pid 692:tid 1995681792] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Sat Apr 29 17:43:44.865157 2017] [core:notice] [pid 692:tid 1995681792] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Apr 29 17:49:10.579101 2017] [mpm_event:notice] [pid 692:tid 1995681792] AH00493: SIGUSR1 received.  Doing graceful restart
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 29 17:49:10.659754 2017] [wsgi:warn] [pid 692:tid 1995681792] mod_wsgi: Compiled for Python/2.7.8.
+[Sat Apr 29 17:49:10.659793 2017] [wsgi:warn] [pid 692:tid 1995681792] mod_wsgi: Runtime using Python/2.7.9.
+[Sat Apr 29 17:49:10.660876 2017] [mpm_event:notice] [pid 692:tid 1995681792] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Sat Apr 29 17:49:10.660952 2017] [core:notice] [pid 692:tid 1995681792] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Apr 29 17:51:06.865387 2017] [mpm_event:notice] [pid 692:tid 1995681792] AH00493: SIGUSR1 received.  Doing graceful restart
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 29 17:51:06.931431 2017] [wsgi:warn] [pid 692:tid 1995681792] mod_wsgi: Compiled for Python/2.7.8.
+[Sat Apr 29 17:51:06.931470 2017] [wsgi:warn] [pid 692:tid 1995681792] mod_wsgi: Runtime using Python/2.7.9.
+[Sat Apr 29 17:51:06.932568 2017] [mpm_event:notice] [pid 692:tid 1995681792] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Sat Apr 29 17:51:06.932641 2017] [core:notice] [pid 692:tid 1995681792] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Apr 29 18:07:00.449021 2017] [mpm_event:notice] [pid 692:tid 1995681792] AH00491: caught SIGTERM, shutting down
+[Sat Apr 29 18:07:04.752284 2017] [wsgi:warn] [pid 692:tid 1995702272] mod_wsgi: Compiled for Python/2.7.8.
+[Sat Apr 29 18:07:04.756612 2017] [wsgi:warn] [pid 692:tid 1995702272] mod_wsgi: Runtime using Python/2.7.9.
+[Sat Apr 29 18:07:04.760099 2017] [mpm_event:notice] [pid 692:tid 1995702272] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Sat Apr 29 18:07:04.760211 2017] [core:notice] [pid 692:tid 1995702272] AH00094: Command line: '/usr/sbin/apache2'
+[Fri May 05 23:57:56.815163 2017] [wsgi:warn] [pid 685:tid 1995771904] mod_wsgi: Compiled for Python/2.7.8.
+[Fri May 05 23:57:56.818323 2017] [wsgi:warn] [pid 685:tid 1995771904] mod_wsgi: Runtime using Python/2.7.9.
+[Fri May 05 23:57:56.820092 2017] [mpm_event:notice] [pid 685:tid 1995771904] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Fri May 05 23:57:56.820220 2017] [core:notice] [pid 685:tid 1995771904] AH00094: Command line: '/usr/sbin/apache2'
+[Sat May 06 00:17:05.040888 2017] [wsgi:warn] [pid 692:tid 1995845632] mod_wsgi: Compiled for Python/2.7.8.
+[Sat May 06 00:17:05.051910 2017] [wsgi:warn] [pid 692:tid 1995845632] mod_wsgi: Runtime using Python/2.7.9.
+[Sat May 06 00:17:05.057935 2017] [mpm_event:notice] [pid 692:tid 1995845632] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Sat May 06 00:17:05.058055 2017] [core:notice] [pid 692:tid 1995845632] AH00094: Command line: '/usr/sbin/apache2'
+[Sat May 06 12:13:18.550081 2017] [mpm_event:notice] [pid 692:tid 1995845632] AH00491: caught SIGTERM, shutting down
+[Sat May 06 12:13:24.834108 2017] [wsgi:warn] [pid 692:tid 1995898880] mod_wsgi: Compiled for Python/2.7.8.
+[Sat May 06 12:13:24.839191 2017] [wsgi:warn] [pid 692:tid 1995898880] mod_wsgi: Runtime using Python/2.7.9.
+[Sat May 06 12:13:24.842661 2017] [mpm_event:notice] [pid 692:tid 1995898880] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Sat May 06 12:13:24.842796 2017] [core:notice] [pid 692:tid 1995898880] AH00094: Command line: '/usr/sbin/apache2'
+[Sat May 06 15:17:04.929037 2017] [wsgi:warn] [pid 682:tid 1995546624] mod_wsgi: Compiled for Python/2.7.8.
+[Sat May 06 15:17:04.933698 2017] [wsgi:warn] [pid 682:tid 1995546624] mod_wsgi: Runtime using Python/2.7.9.
+[Sat May 06 15:17:04.937272 2017] [mpm_event:notice] [pid 682:tid 1995546624] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Sat May 06 15:17:04.937401 2017] [core:notice] [pid 682:tid 1995546624] AH00094: Command line: '/usr/sbin/apache2'
+[Sat May 06 19:26:44.837521 2017] [mpm_event:notice] [pid 682:tid 1995546624] AH00491: caught SIGTERM, shutting down
+[Sat May 06 19:26:49.866500 2017] [wsgi:warn] [pid 681:tid 1995968512] mod_wsgi: Compiled for Python/2.7.8.
+[Sat May 06 19:26:49.869250 2017] [wsgi:warn] [pid 681:tid 1995968512] mod_wsgi: Runtime using Python/2.7.9.
+[Sat May 06 19:26:49.872878 2017] [mpm_event:notice] [pid 681:tid 1995968512] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Sat May 06 19:26:49.872974 2017] [core:notice] [pid 681:tid 1995968512] AH00094: Command line: '/usr/sbin/apache2'
+[Sat May 06 19:26:50.001080 2017] [wsgi:warn] [pid 681:tid 1995894784] mod_wsgi: Compiled for Python/2.7.8.
+[Sat May 06 19:26:50.003514 2017] [wsgi:warn] [pid 681:tid 1995894784] mod_wsgi: Runtime using Python/2.7.9.
+[Sat May 06 19:26:50.007017 2017] [mpm_event:notice] [pid 681:tid 1995894784] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Sat May 06 19:26:50.007140 2017] [core:notice] [pid 681:tid 1995894784] AH00094: Command line: '/usr/sbin/apache2'
+[Sat May 06 23:17:04.957921 2017] [wsgi:warn] [pid 654:tid 1995599872] mod_wsgi: Compiled for Python/2.7.8.
+[Sat May 06 23:17:04.960676 2017] [wsgi:warn] [pid 654:tid 1995599872] mod_wsgi: Runtime using Python/2.7.9.
+[Sat May 06 23:17:04.964355 2017] [mpm_event:notice] [pid 654:tid 1995599872] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Sat May 06 23:17:04.964467 2017] [core:notice] [pid 654:tid 1995599872] AH00094: Command line: '/usr/sbin/apache2'
+[Sat May 06 23:17:05.036280 2017] [wsgi:warn] [pid 705:tid 1995415552] mod_wsgi: Compiled for Python/2.7.8.
+[Sat May 06 23:17:05.041769 2017] [wsgi:warn] [pid 705:tid 1995415552] mod_wsgi: Runtime using Python/2.7.9.
+[Sat May 06 23:17:05.045664 2017] [mpm_event:notice] [pid 705:tid 1995415552] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Sat May 06 23:17:05.045760 2017] [core:notice] [pid 705:tid 1995415552] AH00094: Command line: '/usr/sbin/apache2'
+[Mon May 08 01:17:04.994866 2017] [wsgi:warn] [pid 683:tid 1996390400] mod_wsgi: Compiled for Python/2.7.8.
+[Mon May 08 01:17:04.999211 2017] [wsgi:warn] [pid 683:tid 1996390400] mod_wsgi: Runtime using Python/2.7.9.
+[Mon May 08 01:17:05.002864 2017] [mpm_event:notice] [pid 683:tid 1996390400] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Mon May 08 01:17:05.003016 2017] [core:notice] [pid 683:tid 1996390400] AH00094: Command line: '/usr/sbin/apache2'
+[Mon May 08 13:23:44.041375 2017] [mpm_event:notice] [pid 683:tid 1996390400] AH00491: caught SIGTERM, shutting down
+[Mon May 08 13:23:45.248332 2017] [wsgi:warn] [pid 1982:tid 1995837440] mod_wsgi: Compiled for Python/2.7.8.
+[Mon May 08 13:23:45.248611 2017] [wsgi:warn] [pid 1982:tid 1995837440] mod_wsgi: Runtime using Python/2.7.9.
+[Mon May 08 13:23:45.252270 2017] [mpm_event:notice] [pid 1982:tid 1995837440] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Mon May 08 13:23:45.252383 2017] [core:notice] [pid 1982:tid 1995837440] AH00094: Command line: '/usr/sbin/apache2'
+[Mon May 08 14:04:36.448267 2017] [mpm_event:notice] [pid 1982:tid 1995837440] AH00491: caught SIGTERM, shutting down
+[Mon May 08 14:04:41.059449 2017] [wsgi:warn] [pid 681:tid 1996390400] mod_wsgi: Compiled for Python/2.7.8.
+[Mon May 08 14:04:41.062740 2017] [wsgi:warn] [pid 681:tid 1996390400] mod_wsgi: Runtime using Python/2.7.9.
+[Mon May 08 14:04:41.069362 2017] [mpm_event:notice] [pid 681:tid 1996390400] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Mon May 08 14:04:41.069556 2017] [core:notice] [pid 681:tid 1996390400] AH00094: Command line: '/usr/sbin/apache2'
+[Mon May 08 17:03:03.178677 2017] [mpm_event:notice] [pid 681:tid 1996390400] AH00493: SIGUSR1 received.  Doing graceful restart
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+[Mon May 08 17:03:03.265417 2017] [wsgi:warn] [pid 681:tid 1996390400] mod_wsgi: Compiled for Python/2.7.8.
+[Mon May 08 17:03:03.265462 2017] [wsgi:warn] [pid 681:tid 1996390400] mod_wsgi: Runtime using Python/2.7.9.
+[Mon May 08 17:03:03.266559 2017] [mpm_event:notice] [pid 681:tid 1996390400] AH00489: Apache/2.4.10 (Raspbian) mod_wsgi/4.3.0 Python/2.7.9 configured -- resuming normal operations
+[Mon May 08 17:03:03.266641 2017] [core:notice] [pid 681:tid 1996390400] AH00094: Command line: '/usr/sbin/apache2'
+[Mon May 08 17:32:54.981401 2017] [mpm_event:notice] [pid 681:tid 1996390400] AH00491: caught SIGTERM, shutting down
