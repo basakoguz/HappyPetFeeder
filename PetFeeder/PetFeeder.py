@@ -2,7 +2,6 @@
 from flask import Flask, render_template, Response, flash, request, session
 from wtforms import Form, SubmitField, Label
 
-# Raspberry Pi camera module (requires picamera package)
 from camera_pi import Camera
 
 import time
@@ -19,7 +18,6 @@ import json
 import html2text
 import picamera
 
-
 MOTORON = True
 LOGFILE = "/tmp/petfeeder.log"
 NEWMAIL_OFFSET = 0
@@ -30,7 +28,7 @@ portion = 1
 rotateDuration = portion * 0,5
 day = "day"
 buttonPushed = 0
-buttonWait = 300		
+buttonWait = 300
 
 app = Flask(__name__)
 app.secret_key = "super secret key"
@@ -39,7 +37,6 @@ app.secret_key = "super secret key"
 class PetFeederForm(Form):
 	FeedNow = SubmitField("FeedNow")
 	ConfirmFeeding = SubmitField("ConfirmFeeding")
-
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -65,15 +62,13 @@ def index():
     else:
 
         latestFeed = time.time()
-        savelatestFeed()    
-
+        savelatestFeed()
 
     ldate = time.strftime("%d-%m-%y" , time.localtime(latestFeed))
     ltime = time.strftime("%X" , time.localtime(latestFeed))
 
     lastFeedDate = {'date': ldate}
     lastFeedTime = {'time': ltime}
-
 
     """Video streaming home page."""
     if request.method == 'POST':
@@ -83,11 +78,11 @@ def index():
         	if (time.time() - buttonPushed) < buttonWait:
 
 			flash('You have already fed your pet! Please, wait for at least 5 minutes.')
-		
+
 		else:
 #			flash('Feeding time for your pet has not come yet!')
 #			flash('If you still want to feed, click -Confirm Feeding- button.')
-		
+
 
 #	elif request.form['submit'] == "Confirm Feeding":
 
@@ -95,13 +90,12 @@ def index():
 			savelatestFeed(latestFeed)
 			buttonPushed = time.time()
 			flash('Feeding successful!')
-		
+
 	   		ldate = time.strftime("%d-%m-%y" , time.localtime(latestFeed))
     			ltime = time.strftime("%X" , time.localtime(latestFeed))
 
     			lastFeedDate = {'date': ldate}
     			lastFeedTime = {'time': ltime}
-
 
     return render_template('index.html', form=form, lastFeedTime=lastFeedTime, lastFeedDate=lastFeedDate)
 
@@ -112,18 +106,16 @@ def gen(camera):
         yield (b'--frame\r\n'
                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
-
 @app.route('/video_feed')
 def video_feed():
     """Video streaming route. Put this in the src attribute of an img tag."""
     return Response(gen(Camera()),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
-
 def sendEmail(to, subject, text, attach=None):
 
     msg = MIMEMultipart()
-    msg['From'] = 'happypetfeeder00@gmail.com'
+    msg['From'] = 'happypetfeeder@gmail.com'
     msg['To'] = to
     msg['Subject'] = subject
     msg.attach(MIMEText(text))
@@ -140,8 +132,8 @@ def sendEmail(to, subject, text, attach=None):
     mailServer.ehlo()
     mailServer.starttls()
     mailServer.ehlo()
-    mailServer.login('happypetfeeder00@gmail.com', 'corciyatek')
-    mailServer.sendmail('happypetfeeder00@gmail.com', to, msg.as_string())
+    mailServer.login('happypetfeeder@gmail.com', '*****')
+    mailServer.sendmail('happypetfeeder@gmail.com', to, msg.as_string())
     mailServer.close()
 
 def feedNow():
@@ -149,19 +141,18 @@ def feedNow():
     global GPIO
     global motorPin
     global latestFeed
-    global successfullFeed    
+    global successfullFeed
 
     if MOTORON:
-	
+
         GPIO.output(motorPin, True)
         time.sleep(rotateDuration)
         GPIO.output(motorPin, False)
-        sendEmail('happypetfeeder00@gmail.com', "Besleme onayi |  " + time.strftime("Tarih: %d-%m-%y Saat: %X", time.gmtime(time.time())), "Besleme basarili")
+        sendEmail('happypetfeeder@gmail.com', "Besleme onayi |  " + time.strftime("Tarih: %d-%m-%y Saat: %X", time.gmtime(time.time())), "Besleme basarili")
 
         time.sleep(2)
 
     return time.time()
-
 
 def savelatestFeed(latestFeed):
 
@@ -172,10 +163,5 @@ def savelatestFeed(latestFeed):
 
     feedFile.close()
 
-
 if __name__ == '__main__':
 	app.run(host='0.0.0.0', debug=True, threaded=True)
-
-
-
-

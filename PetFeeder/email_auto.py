@@ -14,7 +14,6 @@ import httplib2
 import json
 import html2text
 
-
 MOTORON = True
 NEWMAIL_OFFSET = 0
 lastEmailCheck = time.time()
@@ -23,8 +22,7 @@ feedInterval = 28800
 FEEDFILE="/home/pi/latestFeed"
 portion = 1
 rotateDuration = portion * 0,5
-day = "day"		
-
+day = "day"
 
 def checkMail():
 
@@ -36,11 +34,11 @@ def checkMail():
 
         lastEmailCheck = time.time()
         server = IMAPClient('imap.gmail.com', use_uid=True, ssl=True)
-        server.login('happypetfeeder00@gmail.com', 'corciyatek')
+        server.login('happypetfeeder@gmail.com', '*****')
         server.select_folder('Inbox')
-        
+
         whenMessages = server.search([u'UNSEEN', u'SUBJECT', u'Son'])
-        
+
         if whenMessages:
 
             for msg in whenMessages:
@@ -50,7 +48,7 @@ def checkMail():
                 msgBody = "Son besleme " + time.strftime("tarihi %d-%m-%y, saati %X ", time.localtime(latestFeed)) + "\n\nCanavarlarin henuz mamaya ihtiyaclari yok.\n\nBir sonraki besleme " + time.strftime("tarihi %d-%m-%y, saati %X olacak.", time.localtime(latestFeed + feedInterval))
 
                 sendEmail(fromAddress, "En son besleme bilgileri su sekilde", msgBody)
-                
+
                 server.add_flags(whenMessages, [SEEN])
 
         feedMessages = server.search([u'UNSEEN', u'SUBJECT', u'Besle'])
@@ -67,27 +65,27 @@ def checkMail():
                 sendEmail(fromAddress, "Besleme icin biraz daha beklemelisin", msgBody)
 
                 server.add_flags(feedMessages, [SEEN])
-                
+
         confirmMessages = server.search ([u'UNSEEN', u'SUBJECT', u'Onay'])
-        
+
         if confirmMessages:
-			
+
 			for msg in confirmMessages:
-				
+
 				msginfo = server.fetch([msg], ['BODY[HEADER.FIELDS (FROM)]'])
 				fromAddress = str(msginfo[msg].get('BODY[HEADER.FIELDS (FROM)]')).split('<')[1].split('>')[0]
 				msgBody = "Bir onceki besleme " + time.strftime("tarihi %d-%m-%y, saati %X.", time.localtime(latestFeed)) + "\n\nYeni besleme saati " + time.strftime("%X",time.localtime()) + " olarak kaydedildi." + "\n\nBir sonraki otomatik besleme " + time.strftime("tarihi %d-%m-%y, saati %X olacak.", time.localtime(latestFeed + feedInterval))
 				sendEmail(fromAddress, "Mmm mamalar lezizmis!", msgBody)
 				server.add_flags(confirmMessages, [SEEN])
-				
+
 			return True
-                
+
     return False
 
 def sendEmail(to, subject, text, attach=None):
 
     msg = MIMEMultipart()
-    msg['From'] = 'happypetfeeder00@gmail.com'
+    msg['From'] = 'happypetfeeder@gmail.com'
     msg['To'] = to
     msg['Subject'] = subject
     msg.attach(MIMEText(text))
@@ -104,8 +102,8 @@ def sendEmail(to, subject, text, attach=None):
     mailServer.ehlo()
     mailServer.starttls()
     mailServer.ehlo()
-    mailServer.login('happypetfeeder00@gmail.com', 'corciyatek')
-    mailServer.sendmail('happypetfeeder00@gmail.com', to, msg.as_string())
+    mailServer.login('happypetfeeder@gmail.com', '*****')
+    mailServer.sendmail('happypetfeeder@gmail.com', to, msg.as_string())
     mailServer.close()
 
 def feedNow():
@@ -113,19 +111,18 @@ def feedNow():
     global GPIO
     global motorPin
     global latestFeed
-    global successfullFeed    
+    global successfullFeed
 
     if MOTORON:
-	
+
         GPIO.output(motorPin, True)
         time.sleep(rotateDuration)
         GPIO.output(motorPin, False)
-        sendEmail('happypetfeeder00@gmail.com', "Besleme onayi |  " + time.strftime("Tarih: %d-%m-%y Saat: %X", time.gmtime(time.time())), "Besleme basarili")
+        sendEmail('happypetfeeder@gmail.com', "Besleme onayi |  " + time.strftime("Tarih: %d-%m-%y Saat: %X", time.gmtime(time.time())), "Besleme basarili")
 
         time.sleep(2)
 
     return time.time()
-
 
 def savelatestFeed():
 
@@ -137,48 +134,43 @@ def savelatestFeed():
 
     feedFile.close()
 
-
 try:
 
 	GPIO.setwarnings(False)
 	GPIO.setmode(GPIO.BCM)
 	GPIO.setup(motorPin, GPIO.OUT)
 	GPIO.output(motorPin, 0)
- 
+
 	if os.path.isfile(FEEDFILE):
- 
+
 		with open(FEEDFILE, 'r') as feedFile:
- 
+
 			latestFeed = float(feedFile.read())
 			feedFile.close()
- 
+
 	else:
- 
+
 		latestFeed = time.time()
-		savelatestFeed()       
- 
-	while True: 
- 
+		savelatestFeed()
+
+	while True:
+
 		if (time.time() - latestFeed) > feedInterval:
- 
+
 			latestFeed = feedNow()
 			savelatestFeed()
- 
+
 		else:
 			if checkMail():
 				latestFeed = feedNow()
 				savelatestFeed()
 
 		time.sleep(.6)
- 
+
 except KeyboardInterrupt:
- 
+
 	GPIO.cleanup()
- 
+
 except SystemExit:
- 
+
 	GPIO.cleanup()
-
-
-
-
